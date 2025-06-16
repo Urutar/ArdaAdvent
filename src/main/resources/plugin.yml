@@ -1,0 +1,24 @@
+name: ArdaAdvent
+version: 2.0
+main: de.ardania.urutar.ardaadvent.ArdaAdvent
+api-version: 1.21.4
+author: Urutar
+description: Adds commands for adventscalendar
+
+commands:
+    adventskalender:
+        aliases: [xmas, advent]
+        description: Opens the advent calendar GUI
+        usage: /advent
+        permission: calendar.ownAndShow
+permissions:
+    calendar.admin.showAny:
+        description: required to show unowned calendars
+        default: op
+    calendar.ownAndShow:
+        description: required to own and show a calendar 
+        default: true
+    calendar.openDoors:
+        description: required to open doors in own calendar
+        default: true
+
